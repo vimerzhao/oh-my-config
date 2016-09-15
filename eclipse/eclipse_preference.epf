@@ -1,0 +1,12 @@
+#Thu Sep 15 08:50:41 CST 2016
+/instance/org.eclipse.cdt.ui/spelling_locale_initialized=true
+@org.eclipse.ui.workbench=3.104.0.v20130204-164612
+@org.eclipse.jdt.launching=3.6.101.v20130111-183046
+\!/=
+file_export_version=3.0
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+/instance/org.eclipse.jdt.launching/org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1471059264968" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1471059264968" name\="jre1.8.0_101" path\="C\:\\Program Files\\Java\\jre1.8.0_101"/>\r\n</vmType>\r\n</vmSettings>\r\n
+@org.eclipse.cdt.ui=5.3.2.201202111925
+/instance/org.eclipse.ui.workbench/org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<org.eclipse.ui.commands>\r\n<keyBinding contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="F12"/>\r\n<keyBinding commandId\="org.eclipse.ui.window.activateEditor" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.emacsAcceleratorConfiguration" keySequence\="F12"/>\r\n</org.eclipse.ui.commands>
+@org.eclipse.jdt.ui=3.8.2.v20130107-165834
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.formatterprofiles.version=12
