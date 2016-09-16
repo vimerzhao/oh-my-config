@@ -1,0 +1,183 @@
+/*来源：http://www.cnblogs.com/yelaiju/p/3185339.html#2725603*/
+
+/*初始模板 Cogitation */
+a.postTitle2 { text-decoration: none; padding: 3px; }
+    a.postTitle2:hover { color: #fff; background-color: #78AFD3; padding: 3px; text-decoration: none; }
+a:visited, a:link { color: Navy; text-decoration: none; }
+blockquote { border: 1px solid #BBB; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #FCFEC5; color: black; line-height: 1.3; margin: 10px 0; padding-left: 20px; word-wrap: break-word; }
+body { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; word-wrap: break-word; margin: 0; }
+div.News { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; padding: 0 0 0 10px; }
+div.post { border: gainsboro 1px solid; min-width: 350px; line-height: 120%; }
+div.postText table td { padding: 2px 2px 2px 2px; }
+    div.postText table td p { line-height: 100%; }
+#comments { line-height: 120%; }
+div.postFoot { font-size: 12px; background-color: WhiteSmoke; border-top: gainsboro 1px solid; padding: 10px; text-align: right; }
+div.postText { font-size: 14px; padding: 10px; line-height: 200%; }
+    div.postText p { line-height: 200%; }
+.cnblogs_code { line-height: 100%; }
+div.postTitle { font-weight: bolder; font-size: 13px; padding: 10px; border-bottom: gainsboro 1px solid; background-color: whitesmoke; }
+    div.postTitle a:visited, div.postTitle a:active, div.postTitle a:link { color: Navy; text-decoration: none; }
+h1 { margin: 0; margin-top: 10px; margin-bottom: 5px; font-size: 18px; line-height: 200%; }
+    h1 a:hover { color: #47F; text-decoration: none; }
+    h1 a:visited, h1 a:active, h1 a:link { color: #000; }
+h2 { background-color: #7F8FB1; color: white; padding: 3px; padding-left: 8px; margin-top: 10px; margin-bottom: 3px; font-size: 13px; }
+
+h3 { color: #1977B0; font-size: 20px; padding-left: 20px; font-size: 12px; }
+h4 { font-size: 14px; }
+h5 { margin: 0; padding: 0; }
+input, textarea { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+p { font-size: 15px; display: block; text-indent: 0; margin: 5px auto; line-height: 180%; color: #000; }
+    p.date { display: none; font-size: 12px; font-weight: bold; margin-bottom: 0; padding-top: 2px; padding-right: 0; padding-bottom: 4px; text-align: right; }
+        p.date img { vertical-align: middle; }
+pre { white-space: pre-wrap; word-wrap: break-word; margin: 1em 0; background-color: #F5F5F5; border: 1px dashed #CCCCCC; padding: 7px; }
+span { line-height: 1.5; }
+td { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+
+#CommentForm { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+#authors ul { list-style: none; padding: 0; margin: 0 5px; }
+#cnblogs_post_body .category ul li, .category ul li { list-style: disc; }
+#cnblogs_post_body .category ul, .category ul { padding-left: 60px; margin: 0; list-style: disc; }
+#cnblogs_post_body a, .content a { text-decoration: none; color: #5B9DCA; padding: 1px 2px; }
+    #cnblogs_post_body a:hover, .content a:hover { color: #FF6600; }
+#cnblogs_post_body ul li, .content ul li { list-style: disc; }
+.footer { font-size: 12px; margin: 0; padding-top: 5px; text-align: center; }
+#footer { margin-left: 300px; }
+#leftmenu { position: absolute; left: 50px; width: 400px; height: auto; background-color: #FEFEFE; margin-top: 10px; padding-top: 0; border-left: 1px solid #b3b1b1; border-right: 1px solid #b3b1b1; border-bottom: 1px solid #b3b1b1; }
+    #leftmenu a { font-size: 12px; padding: 1px; text-decoration: none; }
+    #leftmenu h3 { padding: 10px; margin: 0; background-color: #F5F5F5; border-bottom: 1px solid gainsboro; border-top: 1px solid gainsboro; font-size: 12px; font-weight: bolder; }
+    #leftmenu ul { font-size: 12px; list-style: none; padding: 5px 10px; }
+#main { margin-left: 460px; margin-right: 40px; background-color: White; padding: 10px 0 10px 10px; border-bottom: 4px solid Black; }
+#tagline { font-size: 16px; margin: 0; color: White; }
+#top { color: WhiteSmoke; border-top: 4px solid Black; border-bottom: 4px solid Black; padding: 0 50px; margin: 0; background-image: url(http://common.cnblogs.com/Skins/Cogitation/images/BlueTabBackground.gif); background-repeat: repeat; }
+.BlogStatsBar { font-size: 12px; text-align: right; font-weight: normal; color: Silver; border-collapse: collapse; }
+.Button { border: 1px solid SteelBlue; background-color: gainsboro; }
+.Cal { border: 1px solid #186AA2; width: 100%; font-family: Arial; font-size: 12px; margin-top: 0; margin-bottom: 10px; height: 180px; background-color: WhiteSmoke; padding: 0; }
+.CalDayHeader { background-color: #186AA2; color: White; }
+.CalNextPrev { background-color: #014E82; color: White; }
+.CalOtherMonthDay { color: #808080; }
+.CalTitle { background-color: #014E82; border-color: #ADF; font-family: Arial; font-size: 13px; font-weight: normal; color: White; margin-left: 0; padding: 0; height: 100%; }
+.CalTodayDay { /*background-color:#93C49C;*/ color: Red; }
+.CommentForm { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+.HeaderBar { font-size: 12px; font-weight: normal; border-collapse: collapse; background-image: url(http://common.cnblogs.com/Skins/Cogitation/images/BlueTabBack.gif); background-repeat: repeat-x; }
+    .HeaderBar a:visited, .HeaderBar a:link { color: WhiteSmoke; text-decoration: none; font-weight: normal; }
+.HeaderBarTab { background-image: url(http://common.cnblogs.com/Skins/Cogitation/images/BlueTabFace.gif); background-repeat: repeat-x; border-collapse: collapse; padding: 0; }
+.HeaderTitle { font-size: 1.5em; margin: 0; }
+.HeaderTitles { padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; width: 100%; }
+    .HeaderTitles a:visited, .HeaderTitles a:active, .HeaderTitles a:link, .HeaderTitles a:hover { color: White; text-decoration: none; font-size: 18px; font-weight: normal; }
+.cnblogs_code { margin: 0; padding: 0; background: none; border: none; }
+.commentOpt { padding-bottom: 5px; }
+.div_my_zzk { margin-left: 5px; }
+.l-cell-Function-parms { border: 1px dashed #C1C1C1; background: white; }
+.l-events-hd-cell { background: #DBDBDB; padding: 8px; line-height: 23px; }
+.l-events-hd-cell-default { width: 100px; }
+.l-events-table { border-bottom: 1px solid #C1C1C1; border-right: 1px solid #C1C1C1; }
+    .l-events-table td { border-left: 1px solid #C1C1C1; border-top: 1px solid #C1C1C1; padding: 6px; }
+    .l-events-table ul, .l-events-table li { list-style: none; margin: 0; padding: 0; }
+.l-methods-hd-cell { background: #DBDBDB; padding: 8px; line-height: 23px; }
+.l-methods-hd-cell-default { width: 100px; }
+.l-methods-row-cell { padding: 8px; line-height: 23px; }
+.l-methods-table { border-bottom: 1px solid #C1C1C1; border-right: 1px solid #C1C1C1; }
+    .l-methods-table td { border-left: 1px solid #C1C1C1; border-top: 1px solid #C1C1C1; padding: 6px; }
+    .l-methods-table ul, .l-methods-table li { list-style: none; margin: 0; padding: 0; }
+.l-params-hd-cell { background: #DBDBDB; padding: 8px; line-height: 23px; }
+.l-params-hd-cell-default { width: 100px; }
+.l-params-row-cell { padding: 8px; line-height: 23px; }
+.l-params-row-cell-default { width: 100px; }
+.l-params-table { border-bottom: 1px solid #C1C1C1; border-right: 1px solid #C1C1C1; }
+    .l-params-table td { border-left: 1px solid #C1C1C1; border-top: 1px solid #C1C1C1; }
+.l-row-Function { background: #f5f5f5; }
+.postBody { font-size: 14px; line-height: 1.8; font-family: 'Microsoft Yahei', Tahoma, Arial, Helvetica, STHeiti; font-size: 15px; }
+
+.mySearch { height: 115px; }
+.input_my_zzk { width: 280px; margin: 5px 0 0 5px; float: left; font-size: 13px; height: 24px; line-height: 1.3; }
+.input_my_zzk, div.commentform textarea.comment_textarea { background-color: #FAF7F7; border-radius: 3px; border: solid 1px #C2C0C0; box-shadow: 0 1px #FFFFFF, 0 1px rgba(34, 25, 25, 0.05) inset; }
+    .input_my_zzk:focus, div.commentform textarea.comment_textarea:focus { background-color: #FFFFFF; box-shadow: 0 1px #FFFFFF, 0 1px rgba(34, 25, 25, 0.1) inset; color: #221919; border-color: #FFB941!important; }
+div.commentform textarea { font-size: 13px; height: 200px; width: 550px; }
+
+input.btn_my_zzk { margin-left: 5px; margin-top: 5px; width: 65px; height: 24px; color: #5F5F5F; }
+input.btn_my_zzk, #btn_comment_submit, .cnblogs_code_collapse { background: linear-gradient(#FFFFFF, #F0F0F0) repeat scroll 0 0 #F0F0F0; border: 1px solid #CCCCCC; border-radius: 3px 3px 3px 3px; cursor: pointer; font-weight: bold; text-shadow: 0 1px #FFFFFF; white-space: nowrap; }
+    input.btn_my_zzk:hover, #btn_comment_submit:hover, .cnblogs_code_collapse:hover { color: #FF2900; }
+.cnblogs_code_collapse { padding: 3px 3px; }
+#btn_comment_submit { color: #5F5F5F; height: 30px; width: 75px; }
+#commentbox_opt + p { float: left; margin-top: -30px; margin-left: 365px; }
+
+#green_channel { border-radius: 2px 2px 2px 2px; bottom: 0; margin: 0; padding: 5px; position: fixed; right: 145px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33); font-size: 12px; text-align: center; background-color: #FAFDFB; border-left: 1px solid #9B9B82; border-top: 1px solid #9B9B82; border-bottom: none; border-right: none; }
+#site_nav_under { margin-top: 20px; }
+
+#tbCommentAuthor { width: 508px; }
+.commentbox_title { width: 550px; }
+
+.commentbox_title_right img { cursor: pointer; }
+
+#comments h3 { background-color: whitesmoke; border: 1px solid gainsboro; font-size: 14px; padding: 10px; }
+.comment_vote a { font-size: 12px; }
+
+#RecentCommentsBlock ul > li { margin-bottom: 10px; }
+#profile_block { margin-bottom: 10px; }
+
+.recent_comment_author { color: #242424; font-weight: bold; }
+a:hover, div.postTitle a:hover, .HeaderBar a:hover { color: #FD2424; }
+#cnblogs_post_body h1, #cnblogs_post_body h2, #cnblogs_post_body h3, #cnblogs_post_body h4 { background-color: #014E82; font-weight: bold; padding: 10px; }
+#cnblogs_post_body h1 { font-size: 20px; color: #FFFFFF; }
+#cnblogs_post_body h2 { font-size: 18px; color: #00B050; }
+#cnblogs_post_body h3 { font-size: 16px; color: #0070C0; }
+#cnblogs_post_body h4 { font-size: 15px; color: #F79646; }
+
+#div_digg { right: 0; bottom: 0; padding: 5px; margin: 0; position: fixed; background-color: #FAFDFB; border-left: 1px solid #9B9B82; border-top: 1px solid #9B9B82; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33); border-radius: 2px 2px 2px 2px; font-size: 12px; text-align: center; width: 135px; }
+
+.diggword { color: #009933; font-weight: bold; }
+
+.diggit { }
+.buryit { margin-left: 0; }
+.mySearch + h3 + ul { height: 15px; overflow: hidden; }
+    .mySearch + h3 + ul > li { float: left; margin-bottom: 5px; margin-right: 10px; overflow: hidden; }
+#itemListLin_con + h3 + ul { height: 350px; overflow: hidden; }
+    #itemListLin_con + h3 + ul > li { float: left; margin-bottom: 5px; margin-right: 10px; overflow: hidden; }
+
+#comment_nav { margin-right: 10px; margin-top: 10px; }
+
+#span_comment_canceledit + a { display: none; }
+.comment_date { font-weight: normal; }
+
+@media all and (max-width:1280px) {
+    #cnblogs_post_body p img { max-width: 900px; }
+    #leftmenu { position: absolute; left: 10px; width: 200px; height: auto; }
+    #main { margin-left: 210px; margin-right: 0; max-width: 814px; overflow: hidden; }
+    .input_my_zzk { width: 110px; }
+    #top { padding: 0 10px; }
+}
+
+@media all and (width:1280px) {
+    #leftmenu { position: absolute; left: 35px; width: 350px; height: auto; }
+    #main { margin-left: 400px; margin-right: 35px; max-width: 870px; overflow: hidden; }
+    #cnblogs_post_body p img { max-width: 900px; }
+    .input_my_zzk { width: 255px; }
+    #top { padding: 0 35px; }
+}
+
+@media all and (width:1152px) {
+    #cnblogs_post_body p img { max-width: 450px; }
+    #leftmenu { position: absolute; left: 10px; width: 328px; height: auto; }
+    #main { margin-left: 348px; margin-right: 0; max-width: 769px; overflow: hidden; }
+    .input_my_zzk { width: 235px; }
+    #top { padding: 0 10px; }
+}
+
+@media all and (width:1024px) {
+    #cnblogs_post_body p img { max-width: 900px; }
+    #leftmenu { position: absolute; left: 10px; width: 318px; height: auto; }
+    #main { margin-left: 338px; margin-right: 10px; max-width: 804px; overflow: hidden; }
+    .input_my_zzk { width: 225px; }
+    #top { padding: 0 10px; }
+}
+/*我的笔记本屏幕大小，自己设置成比较合适的，其他显示屏大小保持原来的，但是我个人觉得左侧菜单有点宽*/
+@media all and (width:1366px) {
+    #cnblogs_post_body p img { max-width: 900px; }
+    #leftmenu { position: absolute; left: 10px; width: 218px; height: auto; }
+    #main { margin-left: 238px; margin-right: 10px; max-width: 1200px; overflow: hidden; }
+    .input_my_zzk { width: 125px; }
+    #top { padding: 0 10px; }
+}
+
+.footer + script + script + a { display: none; }
+
