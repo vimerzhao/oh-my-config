@@ -42,11 +42,11 @@ td { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif
 #cnblogs_post_body ul li, .content ul li { list-style: disc; }
 .footer { font-size: 12px; margin: 0; padding-top: 5px; text-align: center; }
 #footer { margin-left: 300px; }
-#leftmenu { position: absolute; left: 50px; width: 400px; height: auto; background-color: #FEFEFE; margin-top: 10px; padding-top: 0; border-left: 1px solid #b3b1b1; border-right: 1px solid #b3b1b1; border-bottom: 1px solid #b3b1b1; }
+#leftmenu { position: absolute; left: 30px; width: 300; height: auto; background-color: #FEFEFE; margin-top: 10px; padding-top: 0; border-left: 1px solid #b3b1b1; border-right: 1px solid #b3b1b1; border-bottom: 1px solid #b3b1b1; }
     #leftmenu a { font-size: 15px; padding: 1px; text-decoration: none; }
     #leftmenu h3 { padding: 15px; margin: 0; background-color: #F5F5F5; border-bottom: 1px solid gainsboro; border-top: 1px solid gainsboro; font-size: 12px; font-weight: bolder; }
     #leftmenu ul { font-size: 15px; list-style: none; padding: 5px 10px; }
-#main { margin-left: 460px; margin-right: 40px; background-color: White; padding: 10px 0 10px 10px; border-bottom: 4px solid Black; }
+#main { margin-left: 350px; margin-right: 40px; background-color: White; padding: 10px 0 10px 10px; border-bottom: 4px solid Black; }
 #tagline { font-size: 16px; margin: 0; color: White; }
 #top { color: WhiteSmoke; border-top: 4px solid Black; border-bottom: 4px solid Black; padding: 0 50px; margin: 0; background-image: url(http://common.cnblogs.com/Skins/Cogitation/images/BlueTabBackground.gif); background-repeat: repeat; }
 .BlogStatsBar { font-size: 14px; text-align: right; font-weight: normal; color: Silver; border-collapse: collapse; }
@@ -139,35 +139,27 @@ a:hover, div.postTitle a:hover, .HeaderBar a:hover { color: #FD2424; }
 #span_comment_canceledit + a { display: none; }
 .comment_date { font-weight: normal; }
 
-@media all and (max-width:1280px) {
-    #cnblogs_post_body p img { max-width: 900px; }
-    #leftmenu { position: absolute; left: 10px; width: 200px; height: auto; }
-    #main { margin-left: 210px; margin-right: 0; max-width: 814px; overflow: hidden; }
-    .input_my_zzk { width: 110px; }
-    #top { padding: 0 10px; }
-}
-
 @media all and (width:1280px) {
-    #leftmenu { position: absolute; left: 35px; width: 350px; height: auto; }
-    #main { margin-left: 400px; margin-right: 35px; max-width: 870px; overflow: hidden; }
+	#cnblogs_post_body p img { max-width: 800px; }
+    #leftmenu { position: absolute; left: 35px; width: 250px; height: auto; }
+    #main { margin-left: 300px; margin-right: 35px; max-width: 870px; overflow: hidden; }
     #cnblogs_post_body p img { max-width: 900px; }
-    .input_my_zzk { width: 255px; }
+    .input_my_zzk { width: 155px; }
     #top { padding: 0 35px; }
 }
 
-@media all and (width:1152px) {
-    #cnblogs_post_body p img { max-width: 450px; }
-    #leftmenu { position: absolute; left: 10px; width: 328px; height: auto; }
-    #main { margin-left: 348px; margin-right: 0; max-width: 769px; overflow: hidden; }
-    .input_my_zzk { width: 235px; }
+@media all and (width:1024px) {
+    #cnblogs_post_body p img { max-width: 700px; }
+    #leftmenu { position: absolute; left: 10px; width: 218px; height: auto; }
+    #main { margin-left: 238px; margin-right: 10px; max-width: 1004px; overflow: hidden; }
+    .input_my_zzk { width: 125px; }
     #top { padding: 0 10px; }
 }
-
-@media all and (width:1024px) {
-    #cnblogs_post_body p img { max-width: 900px; }
-    #leftmenu { position: absolute; left: 10px; width: 318px; height: auto; }
-    #main { margin-left: 338px; margin-right: 10px; max-width: 804px; overflow: hidden; }
-    .input_my_zzk { width: 225px; }
+@media all and (width:800px) {
+    #cnblogs_post_body p img { max-width: 500px; }
+    #leftmenu { position: absolute; left: 10px; width: 118px; height: auto; }
+    #main { margin-left: 138px; margin-right: 10px; max-width: 1200px; overflow: hidden; }
+    .input_my_zzk { width: 25px; }
     #top { padding: 0 10px; }
 }
 /*我的笔记本屏幕大小，自己设置成比较合适的，其他显示屏大小保持原来的，但是我个人觉得左侧菜单有点宽*/
