@@ -1,184 +1,1283 @@
-/*来源：http://www.cnblogs.com/yelaiju/p/3185339.html#2725603*/
+/*彻底更换了博客模板
+参考：http://www.cnblogs.com/asxinyu/p/4340094.html*/
+/*原始模板：SimpleMemory*/
 
-/*初始模板 Cogitation */
-a.postTitle2 { text-decoration: none; padding: 3px; }
-    a.postTitle2:hover { color: #fff; background-color: #78AFD3; padding: 3px; text-decoration: none; }
-a:visited, a:link { color: Navy; text-decoration: none; }
-blockquote { border: 1px solid #BBB; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #FCFEC5; color: black; line-height: 1.3; margin: 10px 0; padding-left: 20px; word-wrap: break-word; }
-body { font-size: 16px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; word-wrap: break-word; margin: 0; }
-div.News { font-size: 15px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; padding: 0 0 0 10px; }
-div.post { border: gainsboro 1px solid; min-width: 350px; line-height: 120%; }
-div.postText table td { padding: 2px 2px 2px 2px; }
-    div.postText table td p { line-height: 100%; }
-#comments { line-height: 120%; }
-div.postFoot { font-size: 15px; background-color: WhiteSmoke; border-top: gainsboro 1px solid; padding: 10px; text-align: right; }
-div.postText { font-size: 16px; padding: 10px; line-height: 200%; }
-    div.postText p { line-height: 200%; }
-.cnblogs_code { line-height: 100%; }
-div.postTitle { font-weight: bolder; font-size: 25px; padding: 15px; border-bottom: gainsboro 1px solid; background-color: whitesmoke; }
-    div.postTitle a:visited, div.postTitle a:active, div.postTitle a:link { color: Navy; text-decoration: none; }
-h1 { margin: 0; margin-top: 10px; margin-bottom: 5px; font-size: 18px; line-height: 200%; }
-    h1 a:hover { color: #47F; text-decoration: none; }
-    h1 a:visited, h1 a:active, h1 a:link { color: #000; }
-h2 { background-color: #7F8FB1; color: white; padding: 3px; padding-left: 8px; margin-top: 10px; margin-bottom: 3px; font-size: 13px; }
-
-h3 { color: #1977B0; font-size: 20px; padding-left: 20px; font-size: 12px; }
-h4 { font-size: 14px; }
-h5 { margin: 0; padding: 0; }
-input, textarea { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
-p { font-size: 15px; display: block; text-indent: 0; margin: 5px auto; line-height: 180%; color: #000; }
-    p.date { display: none; font-size: 12px; font-weight: bold; margin-bottom: 0; padding-top: 2px; padding-right: 0; padding-bottom: 4px; text-align: right; }
-        p.date img { vertical-align: middle; }
-pre { white-space: pre-wrap; word-wrap: break-word; margin: 1em 0; background-color: #F5F5F5; border: 1px dashed #CCCCCC; padding: 7px; }
-span { line-height: 1.5; }
-td { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
-
-#CommentForm { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
-#authors ul { list-style: none; padding: 0; margin: 0 5px; }
-#cnblogs_post_body .category ul li, .category ul li { list-style: disc; }
-#cnblogs_post_body .category ul, .category ul { padding-left: 60px; margin: 0; list-style: disc; }
-#cnblogs_post_body a, .content a { text-decoration: none; color: #5B9DCA; padding: 1px 2px; }
-    #cnblogs_post_body a:hover, .content a:hover { color: #FF6600; }
-#cnblogs_post_body ul li, .content ul li { list-style: disc; }
-.footer { font-size: 12px; margin: 0; padding-top: 5px; text-align: center; }
-#footer { margin-left: 300px; }
-#leftmenu { position: absolute; left: 30px; width: 300; height: auto; background-color: #FEFEFE; margin-top: 10px; padding-top: 0; border-left: 1px solid #b3b1b1; border-right: 1px solid #b3b1b1; border-bottom: 1px solid #b3b1b1; }
-    #leftmenu a { font-size: 15px; padding: 1px; text-decoration: none; }
-    #leftmenu h3 { padding: 15px; margin: 0; background-color: #F5F5F5; border-bottom: 1px solid gainsboro; border-top: 1px solid gainsboro; font-size: 12px; font-weight: bolder; }
-    #leftmenu ul { font-size: 15px; list-style: none; padding: 5px 10px; }
-#main { margin-left: 350px; margin-right: 40px; background-color: White; padding: 10px 0 10px 10px; border-bottom: 4px solid Black; }
-#tagline { font-size: 16px; margin: 0; color: White; }
-#top { color: WhiteSmoke; border-top: 4px solid Black; border-bottom: 4px solid Black; padding: 0 50px; margin: 0; background-image: url(http://common.cnblogs.com/Skins/Cogitation/images/BlueTabBackground.gif); background-repeat: repeat; }
-.BlogStatsBar { font-size: 14px; text-align: right; font-weight: normal; color: Silver; border-collapse: collapse; }
-.Button { border: 1px solid SteelBlue; background-color: gainsboro; }
-.Cal { border: 1px solid #186AA2; width: 100%; font-family: Arial; font-size: 14px; margin-top: 0; margin-bottom: 10px; height: 180px; background-color: WhiteSmoke; padding: 0; }
-.CalDayHeader { background-color: #186AA2; color: White; }
-.CalNextPrev { background-color: #014E82; color: White; }
-.CalOtherMonthDay { color: #808080; }
-.CalTitle { background-color: #014E82; border-color: #ADF; font-family: Arial; font-size: 13px; font-weight: normal; color: White; margin-left: 0; padding: 0; height: 100%; }
-.CalTodayDay { /*background-color:#93C49C;*/ color: Red; }
-.CommentForm { font-size: 14px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
-.HeaderBar { font-size: 14px; font-weight: normal; border-collapse: collapse; background-image: url(http://common.cnblogs.com/Skins/Cogitation/images/BlueTabBack.gif); background-repeat: repeat-x; }
-    .HeaderBar a:visited, .HeaderBar a:link { color: WhiteSmoke; text-decoration: none; font-weight: normal; }
-.HeaderBarTab { background-image: url(http://common.cnblogs.com/Skins/Cogitation/images/BlueTabFace.gif); background-repeat: repeat-x; border-collapse: collapse; padding: 0; }
-.HeaderTitle { font-size: 1.5em; margin: 0; }
-.HeaderTitles { padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; width: 100%; }
-    .HeaderTitles a:visited, .HeaderTitles a:active, .HeaderTitles a:link, .HeaderTitles a:hover { color: White; text-decoration: none; font-size: 18px; font-weight: normal; }
-.cnblogs_code { margin: 0; padding: 0; background: none; border: none; font-size: 15px}
-.commentOpt { padding-bottom: 5px; }
-.div_my_zzk { margin-left: 5px; }
-.l-cell-Function-parms { border: 1px dashed #C1C1C1; background: white; }
-.l-events-hd-cell { background: #DBDBDB; padding: 8px; line-height: 23px; }
-.l-events-hd-cell-default { width: 100px; }
-.l-events-table { border-bottom: 1px solid #C1C1C1; border-right: 1px solid #C1C1C1; }
-    .l-events-table td { border-left: 1px solid #C1C1C1; border-top: 1px solid #C1C1C1; padding: 6px; }
-    .l-events-table ul, .l-events-table li { list-style: none; margin: 0; padding: 0; }
-.l-methods-hd-cell { background: #DBDBDB; padding: 8px; line-height: 23px; }
-.l-methods-hd-cell-default { width: 100px; }
-.l-methods-row-cell { padding: 8px; line-height: 23px; }
-.l-methods-table { border-bottom: 1px solid #C1C1C1; border-right: 1px solid #C1C1C1; }
-    .l-methods-table td { border-left: 1px solid #C1C1C1; border-top: 1px solid #C1C1C1; padding: 6px; }
-    .l-methods-table ul, .l-methods-table li { list-style: none; margin: 0; padding: 0; }
-.l-params-hd-cell { background: #DBDBDB; padding: 8px; line-height: 23px; }
-.l-params-hd-cell-default { width: 100px; }
-.l-params-row-cell { padding: 8px; line-height: 23px; }
-.l-params-row-cell-default { width: 100px; }
-.l-params-table { border-bottom: 1px solid #C1C1C1; border-right: 1px solid #C1C1C1; }
-    .l-params-table td { border-left: 1px solid #C1C1C1; border-top: 1px solid #C1C1C1; }
-.l-row-Function { background: #f5f5f5; }
-.postBody { font-size: 14px; line-height: 1.8; font-family: 'Microsoft Yahei', Tahoma, Arial, Helvetica, STHeiti; font-size: 15px; }
-
-.mySearch { height: 115px; }
-.input_my_zzk { width: 280px; margin: 5px 0 0 5px; float: left; font-size: 13px; height: 24px; line-height: 1.3; }
-.input_my_zzk, div.commentform textarea.comment_textarea { background-color: #FAF7F7; border-radius: 3px; border: solid 1px #C2C0C0; box-shadow: 0 1px #FFFFFF, 0 1px rgba(34, 25, 25, 0.05) inset; }
-    .input_my_zzk:focus, div.commentform textarea.comment_textarea:focus { background-color: #FFFFFF; box-shadow: 0 1px #FFFFFF, 0 1px rgba(34, 25, 25, 0.1) inset; color: #221919; border-color: #FFB941!important; }
-div.commentform textarea { font-size: 13px; height: 200px; width: 550px; }
-
-input.btn_my_zzk { margin-left: 5px; margin-top: 5px; width: 65px; height: 24px; color: #5F5F5F; }
-input.btn_my_zzk, #btn_comment_submit, .cnblogs_code_collapse { background: linear-gradient(#FFFFFF, #F0F0F0) repeat scroll 0 0 #F0F0F0; border: 1px solid #CCCCCC; border-radius: 3px 3px 3px 3px; cursor: pointer; font-weight: bold; text-shadow: 0 1px #FFFFFF; white-space: nowrap; }
-    input.btn_my_zzk:hover, #btn_comment_submit:hover, .cnblogs_code_collapse:hover { color: #FF2900; }
-.cnblogs_code_collapse { padding: 3px 3px; }
-#btn_comment_submit { color: #5F5F5F; height: 30px; width: 75px; }
-#commentbox_opt + p { float: left; margin-top: -30px; margin-left: 365px; }
-
-#green_channel { border-radius: 2px 2px 2px 2px; bottom: 0; margin: 0; padding: 5px; position: fixed; right: 145px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33); font-size: 12px; text-align: center; background-color: #FAFDFB; border-left: 1px solid #9B9B82; border-top: 1px solid #9B9B82; border-bottom: none; border-right: none; }
-#site_nav_under { margin-top: 20px; }
-
-#tbCommentAuthor { width: 508px; }
-.commentbox_title { width: 550px; }
-
-.commentbox_title_right img { cursor: pointer; }
-
-#comments h3 { background-color: whitesmoke; border: 1px solid gainsboro; font-size: 14px; padding: 10px; }
-.comment_vote a { font-size: 12px; }
-
-#RecentCommentsBlock ul > li { margin-bottom: 10px; }
-#profile_block { margin-bottom: 10px; }
-
-.recent_comment_author { color: #242424; font-weight: bold; }
-a:hover, div.postTitle a:hover, .HeaderBar a:hover { color: #FD2424; }
-#cnblogs_post_body h1, #cnblogs_post_body h2, #cnblogs_post_body h3, #cnblogs_post_body h4 { background-color: #014E82; font-weight: bold; padding: 10px; }
-#cnblogs_post_body h1 { font-size: 20px; color: #FFFFFF; }
-#cnblogs_post_body h2 { font-size: 18px; color: #00B050; }
-#cnblogs_post_body h3 { font-size: 16px; color: #0070C0; }
-#cnblogs_post_body h4 { font-size: 15px; color: #F79646; }
-
-#div_digg { right: 0; bottom: 0; padding: 5px; margin: 0; position: fixed; background-color: #FAFDFB; border-left: 1px solid #9B9B82; border-top: 1px solid #9B9B82; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33); border-radius: 2px 2px 2px 2px; font-size: 12px; text-align: center; width: 135px; }
-
-.diggword { color: #009933; font-weight: bold; }
-
-.diggit { }
-.buryit { margin-left: 0; }
-.mySearch + h3 + ul { height: 15px; overflow: hidden; }
-    .mySearch + h3 + ul > li { float: left; margin-bottom: 5px; margin-right: 10px; overflow: hidden; }
-#itemListLin_con + h3 + ul { height: 350px; overflow: hidden; }
-    #itemListLin_con + h3 + ul > li { float: left; margin-bottom: 5px; margin-right: 10px; overflow: hidden; }
-
-#comment_nav { margin-right: 10px; margin-top: 10px; }
-
-#span_comment_canceledit + a { display: none; }
-.comment_date { font-weight: normal; }
-
-@media all and (width:1280px) {
-	#cnblogs_post_body p img { max-width: 800px; }
-    #leftmenu { position: absolute; left: 35px; width: 250px; height: auto; }
-    #main { margin-left: 300px; margin-right: 35px; max-width: 870px; overflow: hidden; }
-    #cnblogs_post_body p img { max-width: 900px; }
-    .input_my_zzk { width: 155px; }
-    #top { padding: 0 35px; }
+/**************************************************
+第一部分：
+**************************************************/
+#EntryTag {
+    margin-top: 20px;
+    font-size: 9pt;
+    color: gray;
 }
 
-@media all and (width:1024px) {
-    #cnblogs_post_body p img { max-width: 700px; }
-    #leftmenu { position: absolute; left: 10px; width: 218px; height: auto; }
-    #main { margin-left: 238px; margin-right: 10px; max-width: 1004px; overflow: hidden; }
-    .input_my_zzk { width: 125px; }
-    #top { padding: 0 10px; }
-}
-@media all and (width:800px) {
-    #cnblogs_post_body p img { max-width: 500px; }
-    #leftmenu { position: absolute; left: 10px; width: 118px; height: auto; }
-    #main { margin-left: 138px; margin-right: 10px; max-width: 1200px; overflow: hidden; }
-    .input_my_zzk { width: 25px; }
-    #top { padding: 0 10px; }
-}
-/*我的笔记本屏幕大小，自己设置成比较合适的，其他显示屏大小保持原来的，但是我个人觉得左侧菜单有点宽*/
-@media all and (width:1366px) {
-    #cnblogs_post_body p img { max-width: 900px; }
-    #leftmenu { position: absolute; left: 10px; width: 218px; height: auto; }
-    #main { margin-left: 238px; margin-right: 10px; max-width: 1200px; overflow: hidden; }
-    .input_my_zzk { width: 125px; }
-    #top { padding: 0 10px; }
+.topicListFooter {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
-.footer + script + script + a { display: none; }
+#divRefreshComments {
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 9pt;
+}
+/*****第一部分结束*******************************/
 
+/**************************************************
+第二部：公共样式（全局样式）
+**************************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
 
-/*我的添加*/
-.cnblogs_code_toolbar {
+html {
+    height: 100%;
+}
+
+body {
+    color: #000;
+    background-color: #e6e6e6;
+    font-family: "微软雅黑" , "PTSans" , "Arial" ,sans-serif;
+    font-size: 14px;
+    min-height: 101%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+ul {
+    word-break: break-all;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+a {
+    outline: none;
+    color: #21759b;
+}
+
+    a:link {
+        color: blue;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #21759b;
+    }
+
+    a:active {
+        color: black;
+        text-decoration: none;
+    }
+
+.clear {
+    clear: both;
+}
+
+/**************************************************
+第三部分：各个页面元素的样式。
+**************************************************/
+/*****home和头部开始**************************/
+#home {
+    margin: 0 auto;
+    width: 72%;
+    min-width: 980px;
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+
+#header {
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+/*博客标题*/
+#blogTitle {
+    height: 60px;  /*高度*/
+    clear: both;
+}
+    /*主标题格式*/
+    #blogTitle h1 {
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 1.8em;/*原始 1.6em*/
+        margin-top: 10px;/*原始 15px */
+    }
+
+        #blogTitle h1 a {
+            color: #515151;
+        }
+            /*超链接颜色*/
+            #blogTitle h1 a:hover {
+                color: #21759b;
+            }
+    /*次标题格式*/
+    #blogTitle h2 {
+        font-weight: normal;
+        font-size: 16px;/*原始 16px ；font-size: 1.0rem;*/      
+        line-height: 1.8;
+        color: #757575;
+        float: left;		
+    }
+
+	/*logo图片*/
+#blogLogo {
+    float: right;
+}
+
+/*头部导航栏*/
+#navigator {
+    font-size:15px;
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    height: 60px;
+    clear: both;
+    margin-top: 25px;
+}
+
+/*导航栏设置,可以自定义导航栏的目录*/
+#navList {
+    min-height: 35px;
+    float: left;
+}
+
+    #navList li {
+        float: left;
+        margin: 0 5px 0 0;
+    }
+    /*菜单字体格式*/
+    #navList a {  
+        display: block;
+        width: 5em;
+        height: 22px;
+        float: left;
+        text-align: center;
+        padding-top: 19px;
+    }
+
+        #navList a:link, #navList a:visited, #navList a:active {
+            color: #6a6a6a;
+            font-weight: bold;
+        }
+
+        #navList a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+/*博客统计*/
+.blogStats {
+    float: right;
+	font-size:13px;
+    color: #757575;
+    margin-top: 19px;
+    margin-right: 2px;
+    text-align: right;
+}
+/*****home和头部结束**************************/
+
+/*****主页文章列表开始**************************/
+#main {
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+}
+
+#mainContent .forFlow {
+    margin-left: 22em;
+    float: none;
+    width: auto;
+}
+
+#mainContent {
+    min-height: 200px;
+    padding: 0px 0px 10px 0;
+    padding-top: 5px;/*原始10*/
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    float: left;
+    margin-left: -22em;
+    width: 100%;
+	font-family: "微软雅黑" , "宋体" , "黑体" ,Arial;
+	font-size: 16px;
+}
+/*每日文章列表*/
+.day {
+    min-height: 10px;
+    _height: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.dayTitle {
     display: none;
+    border: 1px solid #21759b;
+    background: azure;
+    border-radius: 50%;
+    font-size: 16px;
+    height: 65px;
+    line-height: 1.5;
+    margin: 15px;
+    text-align: center;
+    width: 63px;
+    margin-left: -100px;
+    clear: both;
+    position: absolute;
+    top: -15px;
+}
+
+    .dayTitle a {
+        display: inline-block;
+        color: #21759b;
+        margin-top: 15px;
+        width: 60px;
+    }
+/*文章标题*/
+.postTitle {
+    border-left: 3px solid #21759b;
+    margin-bottom: 10px;
+    font-size: 20px;
+    float: right;
+    width: 100%;
+    clear: both;
+}
+
+    .postTitle a:link, .postTitle a:visited, .postTitle a:active {
+        color: #21759b;
+        transition: all 0.4s linear 0s;
+    }
+
+    .postTitle a:hover {
+        margin-left: 30px;
+        color: #0f3647;
+        text-decoration: none;
+    }
+	
+/*文章内容（简介内容）*/
+.postCon {
+    float: right;
+    line-height: 1.5em;
+    width: 100%;
+    clear: both;
+    padding: 10px 0;
+}
+
+.day .postTitle a {
+    padding-left: 10px;
+}
+
+/*文章附加信息*/
+.postDesc {   
+    background: url(images/posted_time.png) no-repeat 0 1px;
+    color: #757575;
+    float: left;
+    width: 100%;
+    clear: both;
+    text-align: left;
+    
+	font-family: "微软雅黑" , "宋体" , "黑体" ,Arial;
+	font-size: 15px;
+    padding-right: 	20px;/*5px  padding-left: 90px;posted 发表时间左边距离*/
+    margin-top: 20px;
+    line-height: 1.8;
+    padding-bottom: 35px;
+}
+
+    .postDesc a:link, .postDesc a:visited, .postDesc a:active {
+        color: #666;
+    }
+
+    .postDesc a:hover {
+        color: #21759b;
+        text-decoration: none;
+    }
+	
+/*一日内多篇文章分割区域*/
+.postSeparator {
+    clear: both;
+    height: 1px;
+    width: 100%;
+    clear: both;
+    float: right;
+    margin: 0 auto 15px auto;
+}
+/*****主页文章列表开始**************************/
+
+/*****侧边栏开始********************************/
+#sideBar {
+    margin-top: -15px;
+    width: 250px;
+    min-height: 200px;
+    padding: 0px 0 0px 5px;
+    float: right;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+    #sideBar a {
+        color: #757575;
+    }
+
+        #sideBar a:hover {
+            color: #21759b;
+            text-decoration: underline;
+        }
+
+.div_my_zzk {
+    width: 175px;
+	font-family: "微软雅黑" , "宋体" , "黑体" ,Arial;
+    font-size: 15px;
+    position: relative;
+    margin-top: 10px;
+}
+
+#btnZzk {
+    background: url("images/blog_search.png") no-repeat 5px 5px;
+}
+
+#widget_my_google input[type=button] {
+    background: url("images/google_search.png") no-repeat 5px 5px;
+}
+
+.input_my_zzk {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 25px;
+    padding-right: 30px;
+    padding-left: 5px;
+    outline: 0;
+}
+
+.btn_my_zzk {
+    font-size: 15px;
+	font-family: "微软雅黑", Helvetica, Arial, sans-serif;	
+    width: 25px;
+    height: 25px;
+    color: transparent;
+    border: 0;
+    border-style: none;
+    cursor: pointer;
+    top: 1px;
+    position: absolute;
+    right: -35px;
+}
+
+.input_my_zzk:hover {
+    border: 1px solid #21759b;
+    transition: all 0.4s linear 0s;
+}
+
+.input_my_zzk:focus {
+    border: 1px solid #21759b;
+}
+
+.newsItem, .catListEssay, .catListLink, .catListNoteBook, .catListTag, .catListPostCategory, .catListPostArchive, .catListImageCategory, .catListArticleArchive, .catListView, .catListFeedback, .mySearch, .catListComment, .catListBlogRank, .catList, .catListArticleCategory {
+    background: #fff;
+    margin-bottom: 35px;
+    word-wrap: break-word;
+}
+
+    .newsItem .catListTitle {
+    }
+/**日历控件样式开始**/
+
+#blog-calendar {
+    width: 228px;
+    padding-bottom: 5px;
+    margin-bottom: 35px;
+    box-shadow: 0 1px 3px #ccc;
+    border: 1px solid #EDEDED;
+}
+
+    #blog-calendar td {
+        font-size: 15px;
+        font-family: "Comic Sans MS";
+    }
+
+    #blog-calendar th {
+        font-size: 14px;
+    }
+
+#calendar {
+    width: 228px;
+    padding-bottom: 5px;
+    margin-bottom: 35px;
+    border: 1px solid #EDEDED;
+    box-shadow: 0 1px 3px #ccc;
+}
+
+    #calendar .Cal {
+        width: 100%;
+        line-height: 1.5em;
+    }
+
+    #calendar td {
+        font-family: "Comic Sans MS";
+        background: #FFFFFF;
+        padding-top: 2px;
+    }
+
+.Cal { /**日历容器table**/
+    border: none;
+    color: #666;
+}
+
+#calendar table a:link, #calendar table a:visited, #calendar table a:active {
+    font-weight: bold;
+}
+
+#calendar table a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.CalTodayDay { /**今天日期样式**/
+    background: #3671a5 !important;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.CalWeekendDay {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.CalOtherMonthDay {
+    color: #ccc;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#calendar .CalNextPrev a:link, #calendar .CalNextPrev a:visited, #calendar .CalNextPrev a:active { /**上个月、下个月箭头样式**/
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.CalDayHeader {
+    background: #F8F8F8;
+    font-weight: 100;
+    color: #5E5F63;
+}
+
+.CalTitle { /**日历年月头部样式**/
+    background: #6293bb;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0;
+    color: #FFF;
+}
+
+    .CalTitle td {
+        background: #F8F8F8 !important;
+        border: 0px !important;
+        color: #5E5F63;
+        font-family: "Comic Sans MS";
+    }
+/**日历控件样式结束**/
+.catListTitle {
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 110%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.catListComment {
+    line-height: 1.5em;
+}
+
+.divRecentComment {
+    text-indent: 2em;
+    color: #494949;
+    margin-bottom: 20px;
+}
+
+#sideBarMain ul {
+    line-height: 1.5em;
+}
+
+#sideBarMain li {
+    line-height: 1.8;
+}
+/*****侧边栏结束********************************/
+
+
+/****文章阅读页面***********/
+#topics {
+    width: 100%;
+    min-height: 200px;
+    padding: 0px 0px 10px 0;
+    float: left;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}
+    /*单独文章阅读页面的 文章标题*/
+    #topics .postTitle {
+        border: 0px;
+        font-size: 150%;
+        font-weight: bold;
+        float: left;
+        line-height: 1.5em;
+        width: 100%;
+        padding-left: 1px;/*原5px*/
+    }
+/*文章内容*/
+.postBody {
+    color: #000;
+}
+/*文章tag区域*/
+#EntryTag {
+    color: #666;
+}
+
+    #EntryTag a {
+        margin-left: 5px;
+        height: 20px;
+        line-height: 20px;
+        color: #333333;
+        padding: 3px 14px;
+        border-radius: 10px;
+        margin: 2px 5px 0;
+        background: #e7e7e7;
+        text-decoration: none;
+    }
+
+        #EntryTag a:link, #EntryTag a:visited, #EntryTag a:active {
+            color: #666;
+        }
+
+        #EntryTag a:hover {
+            color: #f5f5f5;
+            background: #21759b;
+            transition: all 0.4s linear 0s;
+}		
+/*文章分类的标签：在文章阅读页面最尾部*/
+#BlogPostCategory {
+    color: #666;
+}
+
+    #BlogPostCategory a {
+        margin-left: 5px;
+        height: 20px;
+        line-height: 20px;
+        color: #333333;
+        padding: 3px 14px;
+        border-radius: 10px;
+        margin: 2px 5px 0;
+        background: #e7e7e7;
+        text-decoration: none;
+    }
+
+        #BlogPostCategory a:link, #BlogPostCategory a:visited, #BlogPostCategory a:active {
+            color: #666;
+        }
+
+        #BlogPostCategory a:hover {
+            color: #f5f5f5;
+            background: #21759b;
+        }
+
+#topics .postDesc {
+	margin-right:20px;/*新增   padding-left: 0px;*/   
+    width: 100%;
+	font-size: 14px;
+    text-align: left;
+    color: #666;
+    margin-top: 5px;	
+    background: none;
+}
+
+
+.feedback_area_title {
+    font: normal normal 16px/35px "Microsoft YaHei";
+    margin: 10px 0 30px;
+    border-bottom: 2px solid #cccccc;
+}
+
+.louzhu {
+    background: transparent url('images/icoLouZhu.gif') no-repeat scroll right top;
+    padding-right: 16px;
+}
+
+.feedbackListSubtitle {
+    color: #A8A8A8;
+}
+
+    .feedbackListSubtitle a:link, .feedbackListSubtitle a:visited, .feedbackListSubtitle a:active {
+        color: #21759b;
+        font-weight: bold;
+    }
+
+    .feedbackListSubtitle a:hover {
+        color: #21759b;
+        text-decoration: underline;
+    }
+
+    .feedbackListSubtitle b {
+        color: #21759b;
+    }
+
+.feedbackManage {
+    width: 200px;
+    text-align: right;
+    float: right;
+}
+
+.feedbackCon {
+    border-bottom: 1px solid #EEE;
+    padding: 10px 20px 10px 5px;
+    min-height: 35px;
+    _height: 35px;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    width: 100%;
+}
+
+#divRefreshComments {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.commenttb {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    width: 320px;
+}
+
+    .commenttb:hover {
+        color: #333;
+        border-color: rgba(82, 168, 236, 0.8);
+        outline: 0;
+        -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
+        -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
+        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
+        transition: all 0.4s linear 0s;
+    }
+
+.commentTextBox {
+    width: 430px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    .commentTextBox:hover {
+        color: #333;
+        border-color: rgba(82, 168, 236, 0.8);
+        outline: 0;
+        -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
+        -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
+        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
+        transition: all 0.4s linear 0s;
+    }
+
+#AjaxHolder_PostComment_btnSubmit {
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    background: #21759b;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    text-decoration: none;
+}
+
+    #AjaxHolder_PostComment_btnSubmit:hover {
+        background: #333;
+    }
+
+#AjaxHolder_PostComment_divCommnentArea tr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*博客园评论框*/
+.comment_vote {
+    padding-right: 10px;
+}
+
+    .comment_vote a {
+        color: #999;
+    }
+
+        .comment_vote a:hover {
+            color: #21759b;
+        }
+
+#commentform_title {
+    font: normal normal 16px/35px "Microsoft YaHei";
+    margin: 10px 0 30px;
+    border-bottom: 2px solid #cccccc;
+    background-image: none;
+    padding: 0;
+}
+
+#comment_form_container .author {
+    padding-left: 10px;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    width: 320px;
+    height: 20px;
+    background-image: none;
+}
+
+#comment_form_container p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.commentbox_title_left {
+    font-size: 15px;
+}
+
+.commentbox_title_right {
+    float: left;
+}
+
+#comment_form_container .comment_textarea {
+    width: 362px;
+    height: 200px;
+    font-size: 15px;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+    #comment_form_container .comment_textarea:hover {
+        border-color: rgba(82, 168, 236, 0.8);
+        outline: 0;
+        transition: all 0.4s linear 0s;
+    }
+
+    #comment_form_container .comment_textarea:focus {
+        outline: 0;
+    }
+
+.comment_btn {
+    width: 100px;
+    height: 38px;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    background: #21759b;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    text-decoration: none;
+}
+
+    .comment_btn:hover {
+        background: #333;
+    }
+
+#comment_form_container {
+}
+/****查看文章页面开始*************************/
+
+/****列表页面开始******************************/
+.entrylistTitle, .PostListTitle, .thumbTitle { /**几个分类列表的标题样式**/
+    margin-bottom: 25px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    border-bottom: 2px solid #e6e6e6;
+    color: #21759b;
+}
+
+.entrylistDescription {
+    color: #666;
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.entrylistItem {
+    min-height: 20px;
+    _height: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.entrylistPosttitle {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border-left: 3px solid #21759b;
+    font-size: 20px;
+    width: 100%;
+}
+
+    .entrylistPosttitle a:link, .entrylistPosttitle a:visited, .entrylistPosttitle a:active {
+        color: #21759b;
+        transition: all 0.4s linear 0s;
+    }
+
+    .entrylistPosttitle a:hover {
+        margin-left: 30px;
+        color: #0f3647;
+        text-decoration: none;
+    }
+
+.entrylistPostSummary {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.entrylistItemPostDesc {
+    margin-top: 20px;
+    text-align: left;
+    color: #757575;
+    padding-left: 5px;
+}
+
+    .entrylistItemPostDesc a:link, .entrylistItemPostDesc a:visited, .entrylistItemPostDesc a:active {
+        color: #666;
+    }
+
+    .entrylistItemPostDesc a:hover {
+        color: #21759b;
+    }
+
+.entrylist .postSeparator {
+    clear: both;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    border: none;
+}
+
+.divRecentCommentAticle a {
+    color: #000;
+}
+
+.pager {
+    text-align: right;
+    margin-right: 10px;
+}
+
+    .pager a {
+        box-shadow: 0 1px 3px #3671a5;
+        border: 1px solid #3671a5;
+        background: #3671a5;
+        color: white;
+        transition: all 0.4s linear 0s;
+    }
+
+        .pager a:hover {
+            background: #000;
+        }
+
+.PostList {
+    border-bottom: 1px solid #ccc;
+    clear: both;
+    min-height: 1.5em;
+    _height: 1.5em;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.postTitl2 {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.postDesc2 {
+    color: #666;
+    float: right;
+}
+
+.postText2 {
+    clear: both;
+    color: #757575;
+}
+
+/*留言*/
+.pfl_feedback_area_title {
+    text-align: right;
+    line-height: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pfl_feedbackItem {
+    border: 1px dashed #ccc;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.pfl_feedbacksubtitle {
+    width: 100%;
+    height: 1.5em;
+}
+
+.pfl_feedbackname {
+    float: left;
+}
+
+    .pfl_feedbackname a {
+        color: #21759b;
+        font-weight: bold;
+    }
+
+.pfl_feedbackManage {
+    float: right;
+}
+
+.pfl_feedbackCon {
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pfl_feedbackAnswer {
+    color: #F40;
+    text-indent: 2em;
+}
+
+.tdSentMessage {
+    text-align: right;
+}
+
+.errorMessage {
+    width: 300px;
+    float: left;
+}
+
+#Profile1_panelAdd input[type=text], #Profile1_txtContent {
+    padding: 8px;
+    margin-bottom: 10px;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+    #Profile1_panelAdd input[type=text]:hover, #Profile1_txtContent:hover {
+        color: #333;
+        border-color: rgba(82, 168, 236, 0.8);
+        outline: 0;
+        -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
+        -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
+        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
+        transition: all 0.4s linear 0s;
+    }
+
+    #Profile1_panelAdd input[type=text]:focus, #Profile1_txtContent:focus {
+        outline: 0;
+        border-color: rgba(82, 168, 236, 0.8);
+    }
+
+#Profile1_panelAdd input[type=submit] {
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background: #21759b;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    text-decoration: none;
+}
+
+    #Profile1_panelAdd input[type=submit]:hover {
+        background: #333;
+    }
+
+.feedbackListSubtitle {
+    clear: both;
+    color: #A8A8A8;
+    padding: 8px 5px;
+}
+
+.feedbackItem {
+    margin-top: 30px;
+}
+/****列表页面结束******************************/
+
+/****相册页面开始******************************/
+.divPhoto {
+    border: 1px solid #ccc;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+.thumbDescription {
+    color: #757575;
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+/****相册页面开始******************************/
+
+
+/*****留言页面开始*****************************/
+#footer {
+    color: #686868;
+    text-align: center;
+    min-height: 15px;
+    _height: 15px;
+    border-top: 1px solid #ededed;
+    margin-top: 50px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+/*留言查看页面的个人信息*/
+.personInfo {
+    margin-bottom: 20px;
+}
+/*留言分页区域*/
+.pages {
+    text-align: right;
+}
+/*****留言页面结束*****************************/
+/*****第三部分结束*******************************/
+
+/**************************************************
+第四部分：文章内容常用标签格式。
+**************************************************/
+/*文章内部常用标签格式*/
+.postBody {
+    line-height: 1.8;
+}
+
+    .postBody p, .postCon p {
+        text-indent: 2em;
+		color: black;  
+		font: "微软雅黑" , "PTSans" , "Arial" ,sans-serif;
+        font-size: 16px;
+        margin: 0 auto 1em auto;
+    }	
+    .postBody h2 {
+        font-size: 150%;
+        margin: 15px auto 2px auto;
+        font-weight: bold;	
+    }
+
+    .postBody h3 {
+        font-size: 120%;
+        margin: 15px auto 2px auto;
+        font-weight: bold;
+    }
+
+    .postBody h4 {
+        font-size: 110%;
+        margin: 15px auto 2px auto;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .postBody h5 {
+        font-size: 100%;
+        margin: 15px auto 2px auto;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .postBody a:link, .postBody a:visited, .postBody a:active {
+        text-decoration: underline;
+    }
+
+.postCon a:link, .postCon a:visited, .postCon a:active {
+    text-decoration: underline;
+}
+
+.postBody ul, .postCon ul {
+    margin-left: 2em;
+}
+
+.postBody li, .postCon li {
+    list-style-type: disc;
+    margin-bottom: 1em;
+}
+
+.postBody blockquote {
+    background: url('images/comment.gif')) no-repeat 25px 0px;
+    min-height: 35px;
+    _height: 35px;
+    line-height: 1.6em;
+    color: #333;
+}
+/*****第四部分结束*******************************/
+
+.myposts_title {
+    font-weight: bold;
+    text-align: center;
+}
+
+#sideBar {
+    font-size: 15px;
+}
+
+#sideBar h3{
+    font-size: 15px;
+}
+
+/*****第二部分结束*******************************/
+
+
+/*我的添加开始---设置博文格式*/
+#cnblogs_post_body h1 {
+    background: #2B6695;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+    color: #FFFFFF;
+    font-family: "微软雅黑" , "宋体" , "黑体" ,Arial;
+    font-size: 18px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin: 18px 0 !important;
+    padding: 8px 0 5px 15px;
+    text-shadow: 2px 2px 3px #222222;
+}
+#cnblogs_post_body h2 {
+    background: #2B6600;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+    color: #FFFFFF;
+    font-family: "微软雅黑" , "宋体" , "黑体" ,Arial;
+    font-size: 17px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 23px;
+    margin: 12px 0 !important;
+    padding: 5px 0 5px 20px;
+    text-shadow: 2px 2px 3px #222222;
+}
+#cnblogs_post_body p {
+    display: block;
+    font-size: 16px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+#cnblogs_post_body ul {
+    font-size: 15px;
+}
+/*代码样式*/
+.prettyprint {
+    background: #CCFFCC;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+	margin: 2px 2px 2px 2px !important;
+}/*好像没什么软用，除了重CSDN复制的那篇代码*/
+
+#EntryTag {
+    color: #666;
+    font-size: 15px;
+}
+#BlogPostCategory {
+    color: #666;
+    font-size: 15px;
+}
+#author_profile {
+    float: left;
+    width: 280px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    font-size: 14px;
 }
 #post_next_prev {
     line-height: 1.8;
     font-size: 15px;
 }
+.postBody a:link, .postBody a:visited, .postBody a:active {
+    text-decoration: underline;
+    color: blue;
+}
+/*我的添加结束*/
