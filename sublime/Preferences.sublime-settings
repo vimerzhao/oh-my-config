@@ -12,7 +12,12 @@
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"word_wrap": true,
-	"font_options": ["no_bold", "no_italic", "no_antialias", "gray_antialias",],
+	"font_options": [
+		"no_bold",
+	 	"no_italic", 
+	 	"antialias", 
+	 	"gray_antialias",
+	 ],
 	"theme": "Spacegray Eighties.sublime-theme",
  	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme"
 }
