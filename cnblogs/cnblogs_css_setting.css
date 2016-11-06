@@ -1235,6 +1235,20 @@ a {
     padding: 5px 0 5px 20px;
     text-shadow: 2px 2px 3px #222222;
 }
+#cnblogs_post_body h3 {
+    background: #FF8C00;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+    color: #FFFFFF;
+    font-family: "微软雅黑" , "宋体" , "黑体" ,Arial;
+    font-size: 15px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 23px;
+    margin: 12px 0 !important;
+    padding: 5px 0 5px 20px;
+    text-shadow: 2px 2px 3px #222222;
+}
 #cnblogs_post_body p {
     display: block;
     font-size: 16px;
