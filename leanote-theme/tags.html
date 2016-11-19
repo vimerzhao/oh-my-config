@@ -1,0 +1,47 @@
+{{template "header.html" .}}
+
+<div class="container" id="container-center">
+    <div class="col-md-8">
+        <h2 class="header-cate">标签</h2>
+        <div id="postsContainer">
+        	<div id="posts">
+        	    <div class="post-outer">
+            	    <div class="each-post">
+                		<ul class="desc">
+        		        {{range $.tags}}
+        		        <li>
+        	                <a href="{{$.tagPostsUrl}}/{{.Tag}}">
+        	                    {{.Tag}} {{.Count}}
+        	                </a> 
+            		    </li>
+            		    {{end}}
+            		    
+        		        </ul>
+    		        
+    		        </div>
+		        </div>
+		    
+        	</div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        {{template "aside.html" $}}
+    </div>
+</div>
+
+<div id="postsContainer">
+	<div class="container">
+	    <h2></h2>
+	</div>
+	<div id="posts">
+		
+		<div class="each-post">
+		    
+		</div>
+	</div>
+</div>
+
+{{template "footer.html" .}}
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+{{template "header.html" .}}
+
+<div class="container" id="container-center">
+    <div class="col-md-8">
+        <div id="postsContainer">
+        	<div id="posts">
+        		{{template "post_abstract.html" $}}
+        		
+        		<!-- 分页 -->
+        		{{template "paging.html" $}}
+        	</div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        {{template "aside.html" $}}
+    </div>
+</div>
+
+
+{{template "footer.html" $}}
+{{template "highlight.html" $}}
+
+</body>
+</html>

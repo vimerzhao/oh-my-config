@@ -1,0 +1,89 @@
+<aside>
+	<div class="widget_postit_wrap">
+		<div id="postit_widget-3" class="widget-container widget_postit">
+			<h3 class="widget-title">
+				{{$.blogInfo.Title}}
+			</h3>
+			{{$.blogInfo.SubTitle|raw}}
+		</div>
+	</div>
+	
+	<div id="search-2" class="widget-container widget_search">
+		<form method="get" class="searchform" action="{{$.searchUrl}}">
+			<input type="text" value="{{$.keywords}}" name="keywords" class="s" placeholder="Search…">
+			<button class="searchsubmit">
+				Search
+			</button>
+		</form>
+	</div>
+	
+	<div id="latest_widget-2" class="widget-container widget_latest">
+		<h3 class="widget-title">
+			最近发表
+		</h3>
+		<ul>
+	        {{range $.recentPosts}}
+			<li>
+			    {{if .ImgSrc}}
+			    <div class="img attachment-post-thumbnail wp-post-image">
+				    <img width="40" src="{{.ImgSrc}}"
+				        alt="{{.Title|raw}}"
+				    />
+				</div>
+				{{end}}
+				<a href="{{$.postUrl}}/{{.UrlTitle}}">
+					{{.Title|raw}}
+				</a>
+				<br>
+				<span class="widget_latest-date">
+					{{.PublicTime|date}}
+				</span>
+				<span class="widget_latest-comments">
+					{{.CommentNum}}
+				</span>
+			</li>
+			{{end}}
+		
+		</ul>
+	</div>
+
+	<div id="tag_cloud-2" class="widget-container widget_tag_cloud">
+		<h3 class="widget-title">
+			标签
+		</h3>
+		<div class="tagcloud">
+		    {{range $.tags}}
+			<a href="{{$.tagUrl}}/{{.Tag}}" class="tag-link-35"
+			title="1 topic" style="">
+				{{.Tag}}
+			</a>
+			{{end}}
+			
+		</div>
+	</div>
+	
+	{{if $.themeInfo.FriendLinks}}
+	<div id="latest_widget-2" class="widget-container widget_friend-links">
+		<h3 class="widget-title">
+			友情链接
+		</h3>
+		<ul>
+      		{{range $.themeInfo.FriendLinks}}
+    			<li><a href="{{.Url}}" target="_blank">{{.Title}}</a></li>
+      		{{end}}
+		</ul>
+	</div>
+	{{end}}
+	
+	<br />
+	<p class="copyright">
+		<a href="https://leanote.com/">
+			Proudly powered by Leanote
+		</a>
+		<br>
+		Theme by
+		<a href="http://life.leanote.com/">
+			Life
+		</a>
+	</p>
+</aside>
