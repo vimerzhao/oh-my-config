@@ -1,0 +1,37 @@
+::-webkit-scrollbar-track-piece{
+    background-color: #efefef;
+}
+::-webkit-scrollbar-thumb:vertical{
+    background-color: #fca964;
+}
+::-webkit-scrollbar-thumb:horizontal{
+    background-color: #fca964;
+}
+
+.panel-default > .panel-heading {
+background-color: #fdfdfa;
+}
+
+.panel-default > .panel-footer {
+background-color: #fdfdfa;
+}
+
+body {
+background-color: #555048;
+background-image: url(./images/noise.png);
+background-repeat: repeat;
+background-attachment: fixed;
+
+}
+
+code {
+color: #e86b3a;
+background-color: #fff6f2;
+}
+
+a {
+	color: #7a5732;
+}
+a:hover, a:focus {
+	color: #b7824d;
+}

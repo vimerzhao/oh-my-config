@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="roomcar,室车">
+<meta name="description" content="roomcar's blog">
+<meta name="author" content="roomcar">
+
+<title>
+{{if $.curIsIndex}}
+    {{$.blogInfo.Title}}
+{{else if $.curIsCate}}
+    分类-{{$.curCateTitle}}
+{{else if $.curIsSearch}}
+    搜索-{{$.keywords}}
+{{else if $.curIsTags}}
+    标签
+{{else if $.curIsTagPosts}}
+    标签-{{$.curTag}}
+{{else if $.curIsPost}}
+	{{$.post.Title}}
+{{else if $.curIsSingle}}
+	{{$.single.Title}}
+{{else if $.curIsArchive}}
+	归档
+{{end}}
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="{{$.bootstrapCssUrl}}" rel="stylesheet">
+<!-- 字体必须同一域 -->
+<link href="{{$.fontAwesomeUrl}}" rel="stylesheet">
+{{if eq $.themeInfo.ColorSelect "0"}}
+<link href="{{$.themeBaseUrl}}/custom-orange.css" rel="stylesheet">
+{{else if eq $.themeInfo.ColorSelect "1"}}
+<link href="{{$.themeBaseUrl}}/custom-red.css" rel="stylesheet">
+{{else if eq $.themeInfo.ColorSelect "2"}}
+<link href="{{$.themeBaseUrl}}/custom-blue.css" rel="stylesheet">
+{{else}}
+<link href="{{$.themeBaseUrl}}/custom-white.css" rel="stylesheet">
+{{end}}
+<link href="{{$.themeBaseUrl}}/style.css" rel="stylesheet">
+<link href="{{$.themeBaseUrl}}/style_media.css" rel="stylesheet">
+<link href="{{$.themeBaseUrl}}/sharenc.css" rel="stylesheet">
+<script>
+function log(o) {
+}
+</script>
+<style>
+
+</style>
+</head>

@@ -1,43 +1,53 @@
 {{range $.posts}}
-    <div class="post-outer">
-    	<div class="each-post">
-    		<div class="title">
-    			<a href="{{$.postUrl}}/{{.UrlTitle}}" title="全文">
-    				{{.Title}}
-    			</a>
-    			
-    			<div class="comment-num">
-    			    {{.CommentNum}}
-    			</div>
-    			
-    			<div class="created-time">
-        			<i class="fa fa-bookmark-o"></i>
-        			{{if .Tags}} 
-        				{{blogTags $ .Tags}}
-        			{{else}}
-        				无
-        			{{end}}
-        			&nbsp;&nbsp;
-        			<i class="fa fa-clock-o"></i> {{.PublicTime | datetime}} 
-        			&nbsp;&nbsp;
-        			<span class="fa fa-eye"></span> {{.ReadNum}}
-        			&nbsp;&nbsp;
-        			<span class="fa fa-thumbs-o-up"></span> {{.LikeNum}}
-        		</div>
-    		</div>
-    		
-    		<div class="desc">
-    			{{.Abstract | raw}}
-    		</div>
-    		<div id="moreContainer">
-    		    <a class="more" href="{{$.postUrl}}/{{.UrlTitle}}" title="全文">查看</a>
-            </div>	
-    	</div>
+	<div class="each-post panel panel-default card-like">
+  <div class="panel-heading">
+		<h3 class="title">
+			<a href="{{$.postUrl}}/{{.UrlTitle}}" title="{{.Title}}">
+			    {{if .Title}}
+			        {{.Title}}
+			    {{else}}
+			        Untitled
+				{{end}}
+			</a>
+		</h3>
+		<div class="created-time">
+			<i class="fa fa-clock-o"></i> {{.PublicTime | datetime}} 
+			&nbsp;&nbsp;
+			<span class="fa fa-eye"></span> {{.ReadNum}}
+			&nbsp;&nbsp;
+			<span class="fa fa-thumbs-o-up"></span> {{.LikeNum}}
+			&nbsp;&nbsp;
+			<span class="fa fa-comments-o"></span> {{.CommentNum}}
+		</div>
+  </div>
+
+
+  <div class="panel-body">
+		<div class="desc">
+			{{.Abstract | raw}}
+		</div>
+  </div>
+
+
+  <div class="panel-footer">
+		<span id="moreContainer">
+		    <a class="more" href="{{$.postUrl}}/{{.UrlTitle}}" title="{{.Title}}">...More</a>
+        </span>
+		<span class="created-time">
+		    {{if .Tags}}
+		    &nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa fa-bookmark-o"></i>
+				{{blogTags $ .Tags}}
+				&nbsp;&nbsp;
+			{{end}}
+		</span>
+  </div>
+
+
+  
 	</div>
 {{else}}
-<div class="post-outer">
-    <div class="each-post">
-        <div style="padding: 30px;">无</div>
-    </div>
+<div class="each-post card">
+No Post
 </div>
 {{end}}

@@ -1,0 +1,42 @@
+::-webkit-scrollbar-track-piece{
+    background-color: #efefef;
+}
+::-webkit-scrollbar-thumb:vertical{
+    background-color: #ff2b95;
+}
+::-webkit-scrollbar-thumb:horizontal{
+    background-color: #ff2b95;
+}
+
+.panel-default > .panel-heading {
+background-color: #fff7f9;
+}
+
+.panel-default > .panel-footer {
+background-color: #fff7f9;
+}
+
+body {
+background: #ffa3cc; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffa3cc 0%, #ff599e 51%, #ff446d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa3cc), color-stop(51%,#ff599e), color-stop(100%,#ff446d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffa3cc 0%,#ff599e 51%,#ff446d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffa3cc 0%,#ff599e 51%,#ff446d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffa3cc 0%,#ff599e 51%,#ff446d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffa3cc 0%,#ff599e 51%,#ff446d 100%); /* W3C */
+background-repeat: repeat;
+background-attachment: fixed;
+
+}
+
+code {
+color: #e86b3a;
+background-color: #fff6f2;
+}
+
+a {
+	color: #ff2b95;
+}
+a:hover, a:focus {
+	color: #ff9bb2;
+}

@@ -1,26 +1,32 @@
 /*
 以下是本主题的配置, 采用JSON格式
-其中Name, Version, Author, AuthorUrl是必填项(注意首字大写)
-你也可以定义其它的配置, 如FriendLinks, 在模板文件使用 $.themeInfo.FriendLinks来获取值
+其中Name, Version, Author, AuthorUrl请勿更改
+你也可以定义其它的配置, 在模板文件使用 $.themeInfo.Xxxxx来获取值(注意首字大写)
 
 注意: 
 1) JSON语法严格, 键必须用双引号, 最后不得有空','来结尾
 2) 以下配置不能包含任何注释, 不然解析会出错!
 
-请在此解析所有配置
-* Name 主题名
-* Version 主题版本
-* Author 主题的作者
-* AuthorUrl 作者的博客链接或相关链接
+配置说明：
+* Name 主题名。
+* Desc 主题说明。
+* Version 主题版本。
+* Author 主题的作者。
+* AuthorUrl 作者的博客链接或相关链接。
 
-* FriendLinks 友情链接
+* StickerLogo 贴纸Logo。false，则logo为通常的圆形；true，则博客logo呈现为贴纸样式(使用了sticker.js，不能自适应页面)。
+* ColorSelect 选择配色。0=活力橙，1=女生粉，2=宝湖蓝，3=深空黑。
+* FriendLinks 友情链接。
 
 */
 {
-    "Name": "黑色幽默-修改版本",
-    "Version": "1.0",
-    "Author": "zhaoyu1995",
-    "AuthorUrl": "http://blog.leanote.com/zhaoyu1995",
+    "Name": "my-Cards",
+    "Desc": "一个卡片风格的主题。版本1.2，四色可选。请在theme.json中设置logo贴纸、配色和友情链接。",
+    "Version": "1.3",
+    "Author": "roomcar",
+    "AuthorUrl": "http://weibo.com/1399064863",
+    "StickerLogo": "false",
+    "ColorSelect": "2",
     "FriendLinks": [
         {"Title": "我的GitHub", "Url": "https://github.com/zhaoyu1995"},
         {"Title": "我的博客园", "Url": "http://www.cnblogs.com/zhaoyu1995/"},

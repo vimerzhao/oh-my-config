@@ -1,0 +1,182 @@
+/*限制头像大小*/
+#logopic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+#blogLogo {
+  height: 186px;
+}
+#logopicinbrand {
+  width: auto;
+  height: 50px;
+}
+
+/*通常不可见*/
+#blogNav {
+  display: none;
+  background-color: #fff;
+  opacity: 0.7;
+  position: fixed;
+  z-index: 10;
+  padding: 3px;
+  border-radius: 3px;
+}
+#blogNavContent {
+  overflow-y: auto;
+  max-height: 250px;
+  display: none;
+  -webkit-overflow-scrolling: touch !important;
+}
+.mobile-created-time {
+  display: none;
+}
+.navbar-brand {
+  display: none;
+}
+
+/*小屏幕*/
+@media screen and (max-width: 600px) {
+  .nosee-sm {
+    display: none;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  * {
+    font-size: 16px;
+  }
+  #headerContainer,
+  #footerContainer {
+    margin: 10px 0;
+  }
+  img {
+    max-width: 100%;
+  }
+  #posts .each-post {
+  }
+  #posts .each-post .title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 0;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .created-time {
+    display: none;
+  }
+  .mobile-created-time {
+    display: block;
+  }
+  .mobile-created-time #userLogo {
+    display: inline-block;
+    max-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  #content {
+    margin-top: 10px;
+  }
+  .right-section .dropdown,
+  .right-section .btn {
+    display: none !important;
+  }
+  #blogNav {
+    left: initial !important;
+    right: 10px !important;
+  }
+  #postsContainer .container,
+  #footerContainer .container {
+    max-width: 100%;
+  }
+  #postsContainer {
+    margin: 0 !important;
+    max-width: 100%;
+  }
+  #posts {
+    max-width: 100% !important;
+  }
+  #footerContainer #footer a {
+    padding: 3px;
+  }
+  #footerContainer #footer a:hover,
+  #footerContainer #footer a:focus {
+    color: #65bd77;
+  }
+  #headerAndNav {
+    position: initial;
+    text-align: left;
+    width: 100%;
+    border-bottom: 2px dashed #ebeff2;
+  }
+  #headerAndNav #headerContainer {
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+  }
+  #headerAndNav #header {
+    margin: 0;
+    padding: 0;
+  }
+  #headerAndNav #header h1 {
+    display: none;
+  }
+  #headerAndNav .navbar-collapse {
+    overflow-x: hidden;
+  }
+  #headerAndNav #blogDesc {
+    border: none;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  #headerAndNav .navbar-brand {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0;
+    padding-left: 10px;
+  }
+  #headerAndNav .navbar-brand img {
+    height: 40px;
+  }
+  #headerAndNav .navbar .container {
+    width: auto;
+    padding: 0 15px;
+  }
+  #headerAndNav .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #fbfcf7;
+    z-index: 1000;
+    border-bottom: 1px solid #DEDDDF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), inset 0 1px 0 #ffffff;
+  }
+  #headerAndNav .navbar-nav {
+    margin: 0 10px;
+  }
+  #headerAndNav .navbar-nav a {
+    padding-left: 10px;
+    border-radius: 5px;
+  }
+  #headerAndNav #search {
+    width: 100%;
+    margin: 10px;
+  }
+  #headerAndNav .navbar-form {
+    border: none;
+  }
+  #myTab,
+  .tab-content {
+    padding: 0 10px;
+  }
+  #footer {
+    margin: 0 !important;
+  }
+}
