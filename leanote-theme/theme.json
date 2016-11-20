@@ -28,8 +28,6 @@
     "StickerLogo": "false",
     "ColorSelect": "2",
     "FriendLinks": [
-        {"Title": "我的GitHub", "Url": "https://github.com/zhaoyu1995"},
-        {"Title": "我的博客园", "Url": "http://www.cnblogs.com/zhaoyu1995/"},
-        {"Title": "GitHub博客", "Url": "https://zhaoyu1995.github.io/"}
+        {"Title": "张兰清的博客", "Url": "http://blog.leanote.com/zhanglanqing"}
     ]
 }
