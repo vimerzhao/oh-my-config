@@ -1,8 +1,0 @@
-记录一下每个文件夹是干嘛的，以防忘记！
-
-_post:文章
-ai_renju_demo_1：五子棋
-ai_snake_demo：贪吃蛇
-images：图像图标
-navigation：导航页
-favicon.ico网站图标
