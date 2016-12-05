@@ -6,3 +6,9 @@ cd .deploy/zhaoyu1995.github.io
 git add .
 git commit -m $1
 git push origin master
+
+
+
+cd ..
+git clone https://github.com/zhaoyu1995/my-settings
+cd my-settings/hexo
