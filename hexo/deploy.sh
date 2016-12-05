@@ -28,3 +28,7 @@ git push origin master
 else
 	echo =================未备份配置=================
 fi
+
+rm -rf .deploy
+rm -rf my-settings
+
