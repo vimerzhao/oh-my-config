@@ -10,6 +10,8 @@ git push origin master
 
 cd ..
 cd ..
+rm -rf .deploy
+
 #由于配置文件多，无须每次更新，自己判断是否需要备份
 if [ "$2"x != ""x ];then
 echo =================备份配置==================
@@ -24,11 +26,10 @@ cd my-settings/
 git add .
 git commit -m $2
 git push origin master
-
+cd..
+rm -rf my-settings
 else
 	echo =================未备份配置=================
 fi
 
-rm -rf .deploy
-rm -rf my-settings
 
