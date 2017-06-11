@@ -4,7 +4,7 @@
 * chrome
 
 # 编程
-* Vim(spf-13)
+* Vim(spf-13)+tmux(gpakosz/.tmux)+zsh(oh-my-zsh)
 * Intellij IDEA
 * Android Studio
 
