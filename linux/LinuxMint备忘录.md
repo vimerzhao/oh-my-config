@@ -3,6 +3,9 @@
 # 互联网
 * chrome
 
+# 输入法
+* 搜狗Linux（不要指望Ibus或者Fcitx）
+
 # 编程
 * Vim(spf-13)+tmux(gpakosz/.tmux)+zsh(oh-my-zsh)
 * Intellij IDEA
