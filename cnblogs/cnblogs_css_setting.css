@@ -1294,4 +1294,13 @@ a {
     text-decoration: underline;
     color: blue;
 }
+#cnblogs_post_body img {
+    width: auto;
+    max-width: 100%;
+}
+.cnblogs-markdown code {
+    color: black;
+    text-shadow: none;
+}
+
 /*我的添加结束*/
