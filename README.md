@@ -9,3 +9,7 @@
 - `VisualStudio`:VS配置文件
 - `windows`:Windows配置文件
 
+# 其他生产力工具
+- 谷歌日历
+- Trello
+- 百度脑图
