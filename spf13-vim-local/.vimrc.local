@@ -10,7 +10,8 @@
             elseif OSX() && has("gui_running")
                 set guifont=Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
             elseif WINDOWS() && has("gui_running")
-                set guifont=Andale_Mono:h10,Menlo:h10,Consolas:h10,Courier_New:h10
+                set guifont=Consolas:h17,Monaco:h14,Andale_Mono:h14,Menlo:h14,Courier_New:h14
+                set nospell
             endif
         endif
     endif
