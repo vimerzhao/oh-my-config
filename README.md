@@ -8,6 +8,10 @@
 Window平台相关的配置：
 - `xmodmap.reg`:更改键盘映射
 - `VisualStudio`:VS配置，好久没用，估计过期了。
+- `oh-my-gitbash`:定制主题的gitbash
+
+oh-my-gitbash效果：
+![](./images/gitbash.png)
 
 ## Linux
 Linux平台相关配置。
