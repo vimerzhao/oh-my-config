@@ -20,6 +20,7 @@
 if exists('$TMUX')
     set term=screen-256color
 endif
+" 处理TMUX或一些终端的鼠标形状问题
 if exists('$TMUX')
     let &t_SI = "\<Esc>Ptmux;\<Esc>\e[5 q\<Esc>\\"
     let &t_EI = "\<Esc>Ptmux;\<Esc>\e[2 q\<Esc>\\"
