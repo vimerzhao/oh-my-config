@@ -3,5 +3,4 @@
 # i.e. "\nnn\nnn...". This can be disabled with:
 # git config core.quotepath off
 # Or for all repositories using:
-# git config --global core.quotepath off
 git config --global core.quotepath off
